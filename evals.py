@@ -16,7 +16,7 @@ from ragas.metrics import DiscreteMetric
 from rag import default_rag_client
 
 # 初始化通义千问客户端
-tongyi_client = Tongyi(dashscope_api_key='sk-ceab0c4dbd814619bfa3cad7d9e9f32a', model="qwen-turbo")
+tongyi_client = Tongyi(dashscope_api_key='', model="qwen-turbo")
 rag_client = default_rag_client(llm_client=tongyi_client)
 
 # 使用 Ragas 的 LangchainLLMWrapper 包装 Tongyi 模型
