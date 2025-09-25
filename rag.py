@@ -456,7 +456,7 @@ def default_rag_client(llm_client, logdir: str = "logs") -> ExampleRAG:
 if __name__ == "__main__":
     try:
         # 修改为使用通义千问 API Key
-        api_key = 'sk-ceab0c4dbd814619bfa3cad7d9e9f32a'
+        api_key = ''
     except KeyError:
         print("Error: DASHSCOPE_API_KEY environment variable is not set.")
         print("Please set your DashScope API key:")
